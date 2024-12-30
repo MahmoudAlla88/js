@@ -1,60 +1,138 @@
-const name1=prompt("enter name",);
+// const name1=prompt("enter name",);
 
-let gender = prompt("Are you male or female?");
-
-
-if (gender === "male") {
-    alert("Welcome Mr."+name1);
-} else if (gender === "female") {
-    alert("Welcome Ms."+name1);
-} else {
-     alert("Welcome "+name1);
-}
-while(true){
-    if(gender=="male"||gender=="female"){
-        break;
-    }
-     gender = prompt("Are you male or female?");
-}
-const order = prompt("What would you like to order? (Shawarma, Zinger, or Burger)");
+// let gender = prompt("Are you male or female?");
 
 
-if (order === "Shawarma" || order === "Zinger" || order === "Burger") {
+// if (gender === "male") {
+//     alert("Welcome Mr."+name1);
+// } else if (gender === "female") {
+//     alert("Welcome Ms."+name1);
+// } else {
+//      alert("Welcome "+name1);
+// }
+// if(gender!="male"||gender!="female")
+//    gender= gen(gender);
 
-    alert("Your order for "+ order + " is being prepared.");
+
+//     function gen(gender){
+// while(true){
+//     if(gender=="male"||gender=="female"){
+//         return gender;
+//     }
+//      gender = prompt("Are you male or female?");
+// } }
+// const order = prompt("What would you like to order? (Shawarma, Zinger, or Burger)");
+   
+
+// if (order === "Shawarma" || order === "Zinger" || order === "Burger") {
+
+//     alert("Your order for "+ order + " is being prepared.");
     
    
-    alert("Customer Name:"+ name1);
-    alert("Order:"+ order);
-} else {
-    alert("Invalid order. Please choose Shawarma, Zinger, or Burger.");
+//     alert("Customer Name:"+ name1);
+//     alert("Order:"+ order);
+// } else {
+//     alert("Invalid order. Please choose Shawarma, Zinger, or Burger.");
+// }
+
+
+
+// const number = prompt("Enter a number :");
+
+// if (+number === 1) {
+//     alert("ONE");
+// } else if (+number === 2) {
+//     alert("TWO");
+// } else if (+number === 3) {
+//     alert("THREE");
+// } else if (+number === 4) {
+//     alert("FOUR");
+// } else if (+number === 5) {
+//     alert("FIVE");
+// } else if (+number === 6) {
+//     alert("SIX");
+// } else if (+number === 7) {
+//     alert("SEVEN");
+// } else if (+number === 8) {
+//     alert("EIGHT");
+// } else if (+number === 9) {
+//     alert("NINE");
+// } else {
+//     alert("PLEASE TRY AGAIN");
+// }
+
+// let arr=[name1,gender,order];
+// for(let i=0;i<=arr.length-1;i++){
+//     console.log(arr[i]);
+// }
+
+
+// let ar=[5,3,2,4,4,3];
+// rev(ar);
+// function rev(ar){
+//     let revarray=[];
+// for(let i=ar.length-1,j=0;i>=0;i--,j++){
+// revarray[j]=ar[i];
+// }
+// console.log(revarray)
+// }
+
+// for(let i=0;i<=15;i++){
+//     if(i%2==0)
+//     console.log(i+"is even");
+//    else if(i%2==1)
+//         console.log(i+"is odd");
+// }
+
+
+
+
+
+
+
+let str="orange";
+
+revstring(str);
+function revstring(a){
+console.log(a);
+let arr = a.split("");
+
+for(let i=0;i<arr.length;i++){
+for(let j=i;j<arr.length;j++){
+if(arr[i]>arr[j]){
+  let t=arr[i];
+  arr[i] = arr[j];
+  arr[j] = t;
+
+}
+
+}
+  console.log(arr[i]);
+}
+
 }
 
 
+//  let num = prompt("Enter Number");
+// let s2 = "";
 
-const number = prompt("Enter a number :");
+// for (let i = 0; i < num.length ; i++) {
+//   if (+num[i] % 2 == 0 && +num[i + 1] % 2 == 0){
+//      s2 += num[i] + "-";
+// } 
+// else if(+num[i]%2==0 && +num[i + 1] % 2 != 0)
+//     s2 += num[i] ;
 
-if (+number === 1) {
-    alert("ONE");
-} else if (+number === 2) {
-    alert("TWO");
-} else if (+number === 3) {
-    alert("THREE");
-} else if (+number === 4) {
-    alert("FOUR");
-} else if (+number === 5) {
-    alert("FIVE");
-} else if (+number === 6) {
-    alert("SIX");
-} else if (+number === 7) {
-    alert("SEVEN");
-} else if (+number === 8) {
-    alert("EIGHT");
-} else if (+number === 9) {
-    alert("NINE");
-} else {
-    alert("PLEASE TRY AGAIN");
-}
+//   else 
+//   s2 += num[i];
+// }
+
+// console.log(s2);
 
 
+// function AgeChecker(age) {
+//   return age >= 18 ? "The user is Adult" : "The user is Minor";
+// }
 
+// console.log(AgeChecker(20));
+// console.log(AgeChecker(15));
