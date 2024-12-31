@@ -1,70 +1,70 @@
-// const name1=prompt("enter name",);
+const name1=prompt("enter name",);
 
-// let gender = prompt("Are you male or female?");
-
-
-// if (gender === "male") {
-//     alert("Welcome Mr."+name1);
-// } else if (gender === "female") {
-//     alert("Welcome Ms."+name1);
-// } else {
-//      alert("Welcome "+name1);
-// }
-// if(gender!="male"||gender!="female")
-//    gender= gen(gender);
+let gender = prompt("Are you male or female?");
 
 
-//     function gen(gender){
-// while(true){
-//     if(gender=="male"||gender=="female"){
-//         return gender;
-//     }
-//      gender = prompt("Are you male or female?");
-// } }
-// const order = prompt("What would you like to order? (Shawarma, Zinger, or Burger)");
+if (gender === "male") {
+    alert("Welcome Mr."+name1);
+} else if (gender === "female") {
+    alert("Welcome Ms."+name1);
+} else {
+     alert("Welcome "+name1);
+}
+if(gender!="male"||gender!="female")
+   gender= gen(gender);
+
+
+    function gen(gender){
+while(true){
+    if(gender=="male"||gender=="female"){
+        return gender;
+    }
+     gender = prompt("Are you male or female?");
+} }
+const order = prompt("What would you like to order? (Shawarma, Zinger, or Burger)");
    
 
-// if (order === "Shawarma" || order === "Zinger" || order === "Burger") {
+if (order === "Shawarma" || order === "Zinger" || order === "Burger") {
 
-//     alert("Your order for "+ order + " is being prepared.");
+    alert("Your order for "+ order + " is being prepared.");
     
    
-//     alert("Customer Name:"+ name1);
-//     alert("Order:"+ order);
-// } else {
-//     alert("Invalid order. Please choose Shawarma, Zinger, or Burger.");
-// }
+    alert("Customer Name:"+ name1);
+    alert("Order:"+ order);
+} else {
+    alert("Invalid order. Please choose Shawarma, Zinger, or Burger.");
+}
 
 
 
-// const number = prompt("Enter a number :");
+const number = prompt("Enter a number :");
 
-// if (+number === 1) {
-//     alert("ONE");
-// } else if (+number === 2) {
-//     alert("TWO");
-// } else if (+number === 3) {
-//     alert("THREE");
-// } else if (+number === 4) {
-//     alert("FOUR");
-// } else if (+number === 5) {
-//     alert("FIVE");
-// } else if (+number === 6) {
-//     alert("SIX");
-// } else if (+number === 7) {
-//     alert("SEVEN");
-// } else if (+number === 8) {
-//     alert("EIGHT");
-// } else if (+number === 9) {
-//     alert("NINE");
-// } else {
-//     alert("PLEASE TRY AGAIN");
-// }
+if (+number === 1) {
+    alert("ONE");
+} else if (+number === 2) {
+    alert("TWO");
+} else if (+number === 3) {
+    alert("THREE");
+} else if (+number === 4) {
+    alert("FOUR");
+} else if (+number === 5) {
+    alert("FIVE");
+} else if (+number === 6) {
+    alert("SIX");
+} else if (+number === 7) {
+    alert("SEVEN");
+} else if (+number === 8) {
+    alert("EIGHT");
+} else if (+number === 9) {
+    alert("NINE");
+} else {
+    alert("PLEASE TRY AGAIN");
+}
 
-// let arr=[name1,gender,order];
-// for(let i=0;i<=arr.length-1;i++){
-//     console.log(arr[i]);
-// }
+let arr=[name1,gender,order];
+for(let i=0;i<=arr.length-1;i++){
+    console.log(arr[i]);
+}
 
 
 // let ar=[5,3,2,4,4,3];
@@ -90,27 +90,27 @@
 
 
 
-let str="orange";
+// let str="orange";
 
-revstring(str);
-function revstring(a){
-console.log(a);
-let arr = a.split("");
+// revstring(str);
+// function revstring(a){
+// console.log(a);
+// let arr = a.split("");
 
-for(let i=0;i<arr.length;i++){
-for(let j=i;j<arr.length;j++){
-if(arr[i]>arr[j]){
-  let t=arr[i];
-  arr[i] = arr[j];
-  arr[j] = t;
+// for(let i=0;i<arr.length;i++){
+// for(let j=i;j<arr.length;j++){
+// if(arr[i]>arr[j]){
+//   let t=arr[i];
+//   arr[i] = arr[j];
+//   arr[j] = t;
 
-}
+// }
 
-}
-  console.log(arr[i]);
-}
+// }
+//   console.log(arr[i]);
+// }
 
-}
+// }
 
 
 //  let num = prompt("Enter Number");
@@ -136,3 +136,33 @@ if(arr[i]>arr[j]){
 
 // console.log(AgeChecker(20));
 // console.log(AgeChecker(15));
+// إنشاء العنصر <div>
+const div = document.createElement('div');
+
+
+const paragraph = document.createElement('p');
+paragraph.textContent = 'Wesam';
+div.appendChild(paragraph); 
+
+
+const ol = document.createElement('ol');
+
+
+const li1 = document.createElement('li');
+li1.textContent = 'Gender: Female';
+
+const li2 = document.createElement('li');
+li2.textContent = 'Age: 27';
+
+const li3 = document.createElement('li');
+li3.textContent = 'Order: Coffee';
+
+
+ol.appendChild(li1);
+ol.appendChild(li2);
+ol.appendChild(li3);
+
+
+div.appendChild(ol);
+
+document.body.appendChild(div);
