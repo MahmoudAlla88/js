@@ -141,7 +141,7 @@ const div = document.createElement('div');
 
 
 const paragraph = document.createElement('p');
-paragraph.textContent = 'Wesam';
+paragraph.textContent = name1;
 div.appendChild(paragraph); 
 
 
@@ -149,13 +149,13 @@ const ol = document.createElement('ol');
 
 
 const li1 = document.createElement('li');
-li1.textContent = 'Gender: Female';
+li1.textContent = gender;
 
 const li2 = document.createElement('li');
 li2.textContent = 'Age: 27';
 
 const li3 = document.createElement('li');
-li3.textContent = 'Order: Coffee';
+li3.textContent = order;
 
 
 ol.appendChild(li1);
@@ -166,3 +166,30 @@ ol.appendChild(li3);
 div.appendChild(ol);
 
 document.body.appendChild(div);
+
+
+
+
+const form1 = document.getElementById("form1");
+const details = document.getElementById("details");
+
+
+form1.addEventListener("submit",function(events){
+    events.preventDefault(); 
+    const username = document.getElementById("username").value;
+  const age = document.getElementById("age").value;
+  const gender = document.getElementById("gender").value;
+  
+  const orderChoice = document.querySelector('input[name="orderChoice"]:checked');
+  if (!orderChoice) {
+    details.textContent = "Please select an order choice.";
+    return;
+  }
+  const selectedOrder = orderChoice.value;
+  details.innerHTML=
+ `
+    <strong>Username:</strong> ${username} <br>
+    <strong>Age:</strong> ${age} <br>
+    <strong>Gender:</strong> ${gender} <br>
+    <strong>Order Choice:</strong> ${selectedOrder}
+  `;});
