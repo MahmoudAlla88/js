@@ -185,11 +185,12 @@ form1.addEventListener("submit",function(events){
     details.textContent = "Please select an order choice.";
     return;
   }
+  //edit
   const selectedOrder = orderChoice.value;
   details.innerHTML=
  `
-    <strong>Username:</strong> ${username} <br>
-    <strong>Age:</strong> ${age} <br>
-    <strong>Gender:</strong> ${gender} <br>
-    <strong>Order Choice:</strong> ${selectedOrder}
+    <b>Username:</b> ${username} <br>
+    <b>Age:</b> ${age} <br>
+    <b>Gender:</b> ${gender} <br>
+    <b>Order Choice:</b> ${selectedOrder}
   `;});
